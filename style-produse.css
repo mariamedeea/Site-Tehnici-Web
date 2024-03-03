@@ -1,0 +1,403 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+
+  main
+  {
+	padding-left: 12%;
+	padding-right: 12%;
+  }
+  
+  .topnav {
+	background-color: #385265;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	padding: 0 20px;
+  }
+  
+  .topnav p {
+	color: white;
+	font-size: 16px;
+	margin-left: 300px;
+  }
+  
+  .socials {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 320px;
+  }
+  
+  .socials a {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	text-decoration: none;
+  }
+  
+  .socials img {
+	width: 20px;
+	height: 20px;
+  }
+  
+  #meniu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	padding: 20px;
+  }
+  
+  #meniu img {
+	width: 300px;
+	height: 130px;
+  }
+  
+  nav ul {
+	display: flex;
+	list-style: none;
+  }
+  
+  nav li {
+	margin-right: 20px;
+  }
+
+ nav a {
+	text-decoration: none;
+	color: grey;
+}
+  
+  .dropdown-content {
+    display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: #385265;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #385265;
+    color:white;
+}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+
+#eclere h2{
+    text-align: center;
+    position: relative;
+}
+
+#eclere h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-name: animatie_titlu;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.6;
+}
+
+
+#torturi
+{
+    padding-top: 6vw;
+}
+
+#macarons
+{
+    padding-top: 6vw;
+}
+
+#torturi h2
+{
+    text-align: center;
+	position: relative;
+    animation-name: animatie_titlu1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animatie_titlu1 {
+    0%   { left:0px; top:0px; background-color: aqua;}
+  25%  { left:20px; top:0px; background-color: salmon;}
+  50%  { left:20px; top:20px; background-color: aquamarine;}
+  75%  {left:0px; top:20px; background-color: pink;}
+  100% { left:0px; top:0px; background-color: white;}
+}
+
+
+#macarons h2
+{
+    text-align: center;
+	animation-delay: 6s;
+	animation-name: animatie_titlu;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.grid-item img {
+    max-width: 100%;
+    height: 70%;
+}
+
+footer{
+	background-color: #385265;
+	width: 100%;
+	height: 300px;
+	margin-top: 35px;
+	padding-top: 35px;
+
+}
+
+.news{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.socials1{
+	margin-top: 10px;
+}
+
+#tel{
+	color: black;
+}
+
+#tel1{
+	color: black;
+}
+.container1{
+	margin-left: 20px;
+}
+.container1 input[type=text], .container1 input[type=submit] {
+	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: 20px;
+  }
+  
+  input[type=checkbox] {
+	margin-top: 16px;
+	margin-left: 20px;
+  }
+  
+  .container1 input[type=submit] {
+	background-color: white;
+	color: black;
+	border: none;
+  }
+  
+   .container1 input[type=submit]:hover {
+	opacity: 0.8;
+  }
+
+  #scroll img{
+	width: 40px;
+	height: auto;
+}
+
+#scroll{
+	float: right;
+}
+
+.topnav a{
+	text-decoration: none;
+  }
+
+  input[type=text] {
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+	width: 100%;
+  }
+	
+  #mySidenav{
+	position: fixed;
+	top: 10%;
+    left: 0;
+    width: 100px;
+}
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+	left: 0;
+	color: black;
+  }
+  
+  #about {
+	top: 20px;
+	background-color: pink;
+  }
+  
+  #blog {
+	top: 80px;
+	background-color: #2196F3;
+  }
+  
+  #projects {
+	top: 140px;
+	background-color: lightblue;
+  }
+  
+  #contact {
+	top: 200px;
+	background-color: plum;
+  }
+
+
+
+@media only screen and (max-width: 1200px) {
+
+	main
+	{
+	  padding-left: 0;
+	  padding-right: 0;
+	  overflow-x: hidden ;
+	}
+
+	.topnav p{
+		float: left;
+		margin-left: 0;
+	}
+
+    nav ul{
+		padding: 20px;
+		margin: 0;
+		display: block;
+	}
+
+	nav li{
+		padding: 20px;
+		display: block;
+		text-align: center;
+	}
+
+
+	#meniu{
+		display: block;
+	}
+
+	#sigla{
+		padding-left: 35%;
+		padding-right: 30%;
+	}
+
+	form{
+		margin-left: 45%;
+		margin-right: 40%;
+	}
+
+	#foot input{
+		width: 70%;
+	}
+	
+}
+
+@media only screen and (max-width: 700px) {
+
+	main
+	{
+	  padding-left: 0;
+	  padding-right: 0;
+	  overflow-x: hidden ;
+	}
+
+	.topnav p {
+	margin-left: 5%;
+	font-size: 14px;
+	}
+
+	#meniu img{
+		width: 45%;
+		height: auto;
+	}
+
+	footer{
+		height: 400px;
+	}
+	.news{
+		display: block;
+		align-items: center;
+	}
+
+	#foot input{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	main
+	{
+	  padding-left: 0;
+	  padding-right: 0;
+	  overflow-x: hidden ;
+	}
+
+	.topnav p {
+	margin-left: 5%;
+	font-size: 14px;
+	}
+
+	#foot input{
+		width: 70%;
+	}
+
+}

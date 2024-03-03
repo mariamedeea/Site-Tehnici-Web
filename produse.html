@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Site</title>
+    <link rel="stylesheet" href="style-produse.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo-GJeJEQty9Ii6oY2zYdzlvlCJn_63KE&callback=initMap" defer></script>
+    <script src="produse.js"></script>
+    <script src="test.js"></script>
+    <meta charset="UTF-8">
+    <style>
+      #map {
+      height: 400px;
+      width: 100%;
+      padding-left: 12%;
+	    padding-right: 12%;
+    }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav">
+        <a href="#foot"><p>SIGN UP TO OUR NEWSLETTER</p></a>
+        <div class="socials">
+          <a href="https://www.facebook.com/"> 
+            <img class="logo" src="https://img.icons8.com/metro/26/000000/facebook-new--v2.png" alt="link catre facebook"/>
+          </a>
+    
+          <a href="https://www.instagram.com/"> 
+            <img class="logo" src="https://img.icons8.com/ios/26/000000/instagram-new.png" alt="link catre instagram"/>
+          </a>
+    
+          <a href="https://twitter.com/"> 
+            <img class="logo" src="https://img.icons8.com/ios/26/000000/twitter.png" alt="link catre twitter">
+          </a>
+    
+          <a href="https://www.snapchat.com/"> 
+            <img class="logo" src="https://img.icons8.com/ios/26/000000/snapchat.png" alt="link catre snapchat"/>
+          </a>
+        </div>
+      </div>
+    </header>
+ 
+    <main>
+      <div id="meniu">
+        <a id="sigla" href="index.html"><img src="the-cake-blog-660x272-1.png" alt="logo"></a>
+        <nav>
+            <div id="meniu_link">
+                <ul>
+                    <li><a href="index.html" class="active">ACASA</a></li>
+                    <li class="dropdown">
+                        <a href="produse.html">PRODUSE</a>
+                        <div class="dropdown-content">
+                            <a href="produse.html#eclere">ECLERE</a>
+                            <a href="produse.html#macarons">MACARONS</a>
+                            <a href="produse.html#torturi">TORTURI</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <form>
+          <input type="text" name="search" placeholder="Cauta..">
+        </form>
+      </div>
+        <br>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="https://www.instagram.com/" id="about">Instagram </a>
+          <a href="https://www.facebook.com/" id="blog">Facebook</a>
+          <a href="https://twitter.com/" id="projects">Twitter</a>
+          <a href="https://www.snapchat.com/" id="contact">Snapchat</a>
+        </div>
+
+        <div id="countDisplay"></div>
+        <div id="clearStorageButton"> STERGE</div>
+
+        <section id="eclere">
+            <h2 id="titlu">COLECTIA NOASTRA DE ECLERE</h2>
+            <br>
+            <div class="grid-container">
+              <div class="grid-item">
+                <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2020/07/PAMPLEMOUSSE-750x430.jpg" alt="Photo 1">
+                <p class="text-ecler">Ecler cu grapefruit</p>
+              </div>
+                <div class="grid-item">
+                  <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2021/06/Fructe-padure-1000x600-top-750x430.jpg" alt="Photo 2">
+                  <p class="text-ecler">Ecler cu fructe de padure</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2020/07/frv-2019-imag-det-produs-ecler-1000x600-topw-master-Permanenta-CITRON-VERT-BASILIC-1-750x430.jpg" alt="Photo 3">
+                  <p class="text-ecler">Ecler cu cocos si lamaie</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2019/04/frv-2019-imag-det-produs-ecler-1000x600-topw-master-Permanenta-FRUITS-DE-LA-PASSION-750x430.jpeg" alt="Photo 4">
+                  <p class="text-ecler">Ecler cu fructul pasiunii</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2019/03/frv-2019-imag-det-produs-ecler-1000x600-topw-master-Permanenta-CARAMEL-AU-BEURRE-SALE-750x430.jpeg" alt="Photo 5">
+                  <p class="text-ecler">Ecler cu caramel cu unt sarat</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2020/07/frv-2019-imag-det-produs-ecler-1000x600-topw-master-Permanenta-CAFE-750x430.jpg" alt="Photo 6">
+                  <p class="text-ecler">Ecler cu cafea</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2020/07/frv-2019-imag-det-produs-ecler-1000x600-topw-master-Permanenta-CHOCO-LAIT-CARAMELIA-750x430.jpg" alt="Photo 7">
+                  <p class="text-ecler">Ecler cu ciocolata cu alune</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2010/12/CHOCO-LAIT-NOISETTES-750x430.jpg" alt="Photo 8">
+                  <p class="text-ecler">Ecler cu ciocolata cu lapte</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2010/11/CHOCO-NOIR-750x430.jpg" alt="Photo 5">
+                    <p class="text-ecler">Ecler cu ciocolata neagra</p>
+                  </div>
+                  <div class="grid-item">
+                    <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2020/07/frv-2019-imag-det-produs-ecler-1000x600-topw-master-Permanenta-PISTACHE-750x430.jpg" alt="Photo 6">
+                    <p class="text-ecler">Ecler cu fisitc</p>
+                  </div>
+                  <div class="grid-item">
+                    <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2010/05/KALAMANSI-750x430.jpg" alt="Photo 7">
+                    <p class="text-ecler">Ecler cu lamaie</p>
+                  </div>
+                  <div class="grid-item">
+                    <img src="https://frenchrevolutioneclairs.com/wp-content/uploads/2020/07/frv-2019-imag-det-produs-ecler-1000x600-topw-master-Permanenta-FORET-NOIR-750x430.jpg" alt="Photo 8">
+                    <p class="text-ecler">Ecler cu visine</p>
+                  </div>
+              </div>
+              
+        </section>
+
+        <section id="torturi">
+            <h2>COLECTIA NOASTRA DE TORTURI</h2>
+            <br>
+            <div class="grid-container">
+                <div class="grid-item">
+                  <img src="https://cdn.contentspeed.ro/slir/w800/chocolat.websales.ro/cs-content/cs-photos/products/original/tort-l-harmonie_78_7_16372534383562.jpg" alt="Photo 1">
+                  <p>Tort L’ Harmonie</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://cdn.contentspeed.ro/slir/w800/chocolat.websales.ro/cs-content/cs-photos/products/original/tort-l-ispahan_79_8_16372530323398.jpg" alt="Photo 2">
+                  <p>Tort cu fructe de padure</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://cdn.contentspeed.ro/slir/w800/chocolat.websales.ro/cs-content/cs-photos/products/original/tort-le-roi-soleil_77_9_16372538012678.jpg" alt="Photo 3">
+                  <p>Tort cu cocos si lamaie</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://cdn.contentspeed.ro/slir/w800/chocolat.websales.ro/cs-content/cs-photos/products/original/tort-la-fortnoire_74_8_1637252658.jpg" alt="Photo 4">
+                  <p>Tort cu fructul pasiunii</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://cdn.contentspeed.ro/slir/w800/chocolat.websales.ro/cs-content/cs-photos/products/original/tort-lapothose_75_9_16372536510795.jpg" alt="Photo 5">
+                  <p>Tort cu caramel cu unt sarat</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://www.cofetaria-maria.ro/wp-content/uploads/2015/06/tort-maria-500x500.jpg" alt="Photo 6">
+                  <p>Tort cu cafea</p>
+                </div>
+                
+            </div> 
+        </section>
+
+        <section id="macarons"> 
+            <h2>COLECTIA NOASTRA DE MACARONS</h2>
+            <br>
+            <div class="grid-container">
+                <div class="grid-item">
+                  <img src="https://onlineshop.gracecc.ro/749-home_default/macarons-vanilie.jpg" alt="Photo 1">
+                  <p>Macarons L’ Harmonie</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://onlineshop.gracecc.ro/750-home_default/macaron-ciocolata.jpg" alt="Photo 2">
+                  <p>Macarons cu cafea</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://onlineshop.gracecc.ro/752-home_default/macarons-caramel.jpg" alt="Photo 3">
+                  <p>Macarons cu cocos si lamaie</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://onlineshop.gracecc.ro/753-home_default/macarons-banane.jpg" alt="Photo 4">
+                  <p>Macarons cu fructul pasiunii</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://onlineshop.gracecc.ro/755-home_default/macarons-visine.jpg" alt="Photo 5">
+                  <p>Macarons cu zmeura</p>
+                </div>
+                <div class="grid-item">
+                  <img src="https://onlineshop.gracecc.ro/759-home_default/macarons-zmeura.jpg" alt="Photo 6">
+                  <p>Macarons cu capsuni</p>
+                </div>
+                
+            </div> 
+        </section>
+
+
+    </main>
+
+    <footer id="foot">
+      <div class="news">
+        <div class="container1" style="background-color:#385265">
+          <h4>ABONEAZA-TE LA NEWSLETTER-UL NOSTRU:</h4>
+          <input type="text" placeholder="Name" name="name" required><br>
+          <input type="text" placeholder="Email address" name="mail" required><br>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe">
+            Da, vreau sa ma abonez la Newsletter prin e-mail. 
+          </label>
+  
+          <div>
+            <input type="submit" value="Subscribe">
+          </div>
+        </div>
+  
+        <div class="contact">
+          CONTACTEAZA-NE
+          <div class="socials1">
+            <a href="https://www.facebook.com/"> 
+              <img class="logo" src="https://img.icons8.com/metro/26/000000/facebook-new--v2.png" alt="link catre facebook"/>
+            </a>
+      
+            <a href="https://www.instagram.com/"> 
+              <img class="logo" src="https://img.icons8.com/ios/26/000000/instagram-new.png" alt="link catre instagram"/>
+            </a>
+      
+            <a href="https://twitter.com/"> 
+              <img class="logo" src="https://img.icons8.com/ios/26/000000/twitter.png" alt="link catre twitter">
+            </a>
+      
+            <a href="https://www.snapchat.com/"> 
+              <img class="logo" src="https://img.icons8.com/ios/26/000000/snapchat.png" alt="link catre snapchat"/>
+            </a>
+          </div>
+  
+          <p id="tel1"> <img src="https://img.icons8.com/android/26/000000/phone.png" alt="tel">
+            <a id="tel" href="tel:555-555-5555">555-555-5555</a></p>
+        </div>
+      </div>
+
+      <h2 style="text-align: center;">LOCATIILE NOASTRE</h2>
+      <div id="map">
+
+      </div>
+  
+      <a href="#" id="scroll"><img src="up-arrow.png" alt="sageata"></a>
+    </footer>
+</body>
+</html>

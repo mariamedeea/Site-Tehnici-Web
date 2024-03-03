@@ -1,0 +1,565 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+
+  main
+  {
+	padding-left: 12%;
+	padding-right: 12%;
+  }
+  
+  .topnav {
+	background-color: #385265;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	padding: 0 20px;
+  }
+
+  .topnav a{
+	text-decoration: none;
+  }
+  
+  .topnav p {
+	color: white;
+	font-size: 16px;
+	margin-left: 300px;
+  }
+  
+  .socials {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 320px;
+  }
+  
+  .socials a {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	text-decoration: none;
+  }
+  
+  .socials img {
+	width: 20px;
+	height: 20px;
+  }
+  
+  #meniu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	padding: 20px;
+  }
+  
+  #meniu img {
+	width: 300px;
+	height: 130px;
+  }
+  
+  nav ul {
+	display: flex;
+	list-style: none;
+	margin-right: 100px;
+  }
+  
+  nav li {
+	margin-right: 20px;
+  }
+
+ nav a {
+	text-decoration: none;
+	color: grey;
+}
+
+li:nth-child(2) {
+	margin-right: 2px;
+  }
+
+.dropdown-content {
+    display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: #385265;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #385265;
+    color:white;
+}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+  input[type=text] {
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+	width: 100%;
+  }
+.poza_mare
+{
+	background-color: pink;
+	display: flex;
+	flex-direction: column;
+}
+.poza_mare div{
+	display: inline-flex; 
+	align-items: center; 
+  }
+
+#ecler:hover{
+	animation: shake 0.5s;
+	animation-iteration-count: 3;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+#produsul_lunii{
+	display: none;
+}
+.poza_mare img
+{
+	height: 500px;
+}
+
+#buton
+{
+	display: inline-flex;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	background-color: #385265;
+	width: 13%;
+	justify-content: center;
+	margin-bottom: 2%;
+	margin-left: 15%;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.flex-container div {
+	width: 350px;
+	height: 500px;
+	margin-bottom: 60px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.flex-container div img
+{
+	width: 390px;
+	height: 500px;
+	padding: 27px;
+}
+
+.flex-container div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  background-color: #385265;
+  padding: 1vw;
+}
+
+hr
+{
+	color: grey;
+}
+
+.despre h2{
+	text-emphasis: none;
+	text-decoration: none;
+	color: grey;
+	text-align: center;
+	margin-top: 3%;
+}
+
+.despre{
+	padding-top: 5%;
+}
+
+.despre h3{
+	text-align: center;
+	color: grey;
+	padding: 3%;
+}
+
+.logo:hover {
+	transform: translateY(15px) scale(1.1);}
+
+.flex-container img:hover {
+		transform: translateY(15px) scale(1);
+	  }
+
+#scris{
+	animation-name: glisare;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	animation-direction: normal;
+}
+
+#ecler{
+	animation-name: glisare1;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	animation-direction: normal;
+}
+
+hr{
+	margin-top: 40px;
+	color: grey;
+}
+
+footer{
+	background-color: #385265;
+	width: 100%;
+	height: 350px;
+	margin-top: 35px;
+	padding-top: 35px;
+
+}
+
+.news{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.socials1{
+	margin-top: 10px;
+}
+
+#tel{
+	color: black;
+}
+
+#tel1{
+	color: black;
+}
+.container1{
+	margin-left: 20px;
+}
+.container1 input[type=text], .container1 input[type=submit] {
+	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: 20px;
+  }
+  
+  input[type=checkbox] {
+	margin-top: 16px;
+	margin-left: 20px;
+  }
+  
+  .container1 input[type=submit] {
+	background-color: white;
+	color: black;
+	border: none;
+  }
+  
+   .container1 input[type=submit]:hover {
+	opacity: 0.8;
+  }
+
+#scroll img{
+	width: 40px;
+	height: auto;
+}
+
+#scroll{
+	float: right;
+}
+
+#mySidenav{
+	position: fixed;
+	top: 10%;
+    left: 0;
+    width: 100px;
+}
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+	left: 0;
+	color: black;
+  }
+  
+  #about {
+	top: 20px;
+	background-color: pink;
+  }
+  
+  #blog {
+	top: 80px;
+	background-color: #2196F3;
+  }
+  
+  #projects {
+	top: 140px;
+	background-color: lightblue;
+  }
+  
+  #contact {
+	top: 200px;
+	background-color: plum;
+  }
+
+
+@keyframes glisare{
+	0%{
+		opacity: 0;
+		transform:translateX(-100px);
+	}
+
+	20%{
+		transform: translateX(5px);
+	}
+
+	80%{
+		transform: translateX(10px);
+	}
+	
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes glisare1{
+	0%{
+		opacity: 0;
+		transform:translateY(-100px);
+	}
+
+	20%{
+		transform: translateY(5px);
+	}
+
+	80%{
+		transform: translateY(10px);
+	}
+	
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+
+	main
+	{
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+	#scris{
+		width: 35%;
+		height: auto;
+	}
+
+	#ecler{
+		width: 45%;
+		height: auto;
+	}
+
+	.poza_mare a{
+		width: 30px;
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	main
+	{
+	  padding-left: 0;
+	  padding-right: 0;
+	  overflow-x: hidden ;
+	}
+
+	.topnav p{
+		float: left;
+		margin-left: 0;
+	}
+
+	.flex-container {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+	.flex-container div {
+	width: 40%;
+	height: auto;
+	margin-bottom: 40px;
+	}
+	.flex-container div img {
+	width: 80%;
+	height: auto;
+	padding: 20px;
+	}
+
+	nav ul{
+		padding: 20px;
+		margin: 0;
+		display: block;
+	}
+	
+
+	#sigla{
+		padding-left: 37%;
+		padding-right: 40%;
+	}
+
+	nav{
+		display: block;
+		justify-content: center;
+		padding-left: 45%;
+		padding-right: 45%;
+	}
+	nav li{
+		padding:10px;
+		display: block;
+	}
+
+	#meniu{
+		display: block;
+		justify-content: center;
+	}
+	
+	form{
+		margin-left: 45%;
+		margin-right: 40%;
+	}
+
+	#foot input{
+		width: 70%;
+	}
+
+	.poza_mare a{
+		width: 30px;
+		font-size: 12px;
+	}
+}
+
+
+
+@media only screen and (max-width: 720px) {
+
+	main
+	{
+	  padding-left: 0;
+	  padding-right: 0;
+	  overflow-x: hidden ;
+	}
+
+	.topnav p {
+	margin-left: 5%;
+	font-size: 14px;
+	}
+
+	#meniu img{
+		width: 45%;
+		height: auto;
+	}
+
+	footer{
+		height: 400px;
+	}
+	.news{
+		display: block;
+		align-items: center;
+	}
+
+	#foot input{
+		width: 70%;
+	}
+
+	.poza_mare a{
+		width: 30px;
+		font-size: 12px;
+	}
+}
+	
+@media only screen and (max-width: 600px) {
+	main
+	{
+	  padding-left: 0;
+	  padding-right: 0;
+	  overflow-x: hidden ;
+	}
+	.topnav p {
+	margin-left: 5%;
+	font-size: 14px;
+	}
+
+	#foot input{
+		width: 70%;
+	}
+
+	.poza_mare a{
+		width: 80px;
+		font-size: 10px;
+	}
+
+}
+
+#map {
+	height: 100%;
+  }
